@@ -47,6 +47,8 @@ Plugin 'moll/vim-node'
 Plugin 'jnwhiteh/vim-golang'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'bling/vim-airline'
 
 " Custom Plugin Settings
 
@@ -60,8 +62,15 @@ if exists("g:did_load_filetypes")
 endif
 set runtimepath+=$GOROOT/misc/vim " replace $GOROOT with the output of: go env GOROOT
 
-"For Plugin 'scrooloose/nerdtree'
-nnoremap <silent> <F5> :NERDTreeToggle<CR>
+" For Plugin 'scrooloose/nerdtree'
+nnoremap <silent> <F5> :NERDTreeTabsToggle<CR>
+
+" For Plugin 'jistr/vim-nerdtree-tabs'
+"let g:nerdtree_tabs_open_on_console_startup=1
+
+" For Plugin 'bling/vim-airline'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
 
 " General settings
 autocmd! bufwritepost .vimrc source %
