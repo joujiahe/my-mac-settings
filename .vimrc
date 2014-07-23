@@ -45,10 +45,12 @@ filetype plugin indent on    " required
 Plugin 'pangloss/vim-javascript'
 Plugin 'moll/vim-node'
 Plugin 'jnwhiteh/vim-golang'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
 
 " Custom Plugin Settings
 
-" For  Plugin 'jnwhiteh/vim-golang'
+" For Plugin 'jnwhiteh/vim-golang'
 " Some Linux distributions set filetype in /etc/vimrc.
 " Clear filetype flags before changing runtimepath to force Vim to reload
 " them.
@@ -58,7 +60,12 @@ if exists("g:did_load_filetypes")
 endif
 set runtimepath+=$GOROOT/misc/vim " replace $GOROOT with the output of: go env GOROOT
 
+"For Plugin 'scrooloose/nerdtree'
+nnoremap <silent> <F5> :NERDTreeToggle<CR>
+
 " General settings
+autocmd! bufwritepost .vimrc source %
+
 filetype plugin indent on
 syntax on
 set nu
