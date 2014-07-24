@@ -49,6 +49,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-fugitive'
 
 " Custom Plugin Settings
 
@@ -71,6 +72,7 @@ nnoremap <silent> <F5> :NERDTreeTabsToggle<CR>
 " For Plugin 'bling/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline_powerline_fonts = 1
 
 " General settings
 autocmd! bufwritepost .vimrc source %
