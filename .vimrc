@@ -50,6 +50,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
+Plugin 'Shougo/neocomplcache.vim'
 
 " Custom Plugin Settings
 
@@ -74,12 +75,23 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline_powerline_fonts = 1
 
+" For Plugin 'Shougo/neocomplcache.vim'
+let g:neocomplcache_enable_at_startup = 1
+
+" Enable omni completion.
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+noremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
 " General settings
 autocmd! bufwritepost .vimrc source %
 
 filetype plugin indent on
 syntax on
 set nu
+colorscheme desert
+set colorcolumn=80
 
 "set showcmd            " Show (partial) command in status line.
 set showmatch          " Show matching brackets.
