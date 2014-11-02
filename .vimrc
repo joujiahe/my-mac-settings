@@ -92,12 +92,12 @@ syntax on
 set nu
 colorscheme desert
 set colorcolumn=80
-
-"set showcmd            " Show (partial) command in status line.
+set clipboard=unnamed  " Copy cross vim instance
+"set showcmd           " Show (partial) command in status line.
 set showmatch          " Show matching brackets.
-"set ignorecase         " Do case insensitive matching
-"set smartcase          " Do smart case matching
+"set ignorecase        " Do case insensitive matching
+"set smartcase         " Do smart case matching
 set hlsearch           " Highlight search
 set incsearch          " Incremental search
-"set autowrite          " Automatically save before commands like :next and :make
+"set autowrite         " Automatically save before commands like :next and :make
 set hidden             " Hide buffers when they are abandoned
