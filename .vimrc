@@ -42,6 +42,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 " Custom Plugins
+Plugin 'tpope/vim-rails'
 Plugin 'pangloss/vim-javascript'
 Plugin 'moll/vim-node'
 Plugin 'jnwhiteh/vim-golang'
