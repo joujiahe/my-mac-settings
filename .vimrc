@@ -52,6 +52,9 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'Shougo/neocomplcache.vim'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'digitaltoad/vim-jade'
+autocmd BufRead,BufNewFile *.jade setlocal ft=jade
 
 " Custom Plugin Settings
 
