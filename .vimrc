@@ -54,6 +54,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'Shougo/neocomplcache.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'digitaltoad/vim-jade'
+Plugin 'slim-template/vim-slim'
 autocmd BufRead,BufNewFile *.jade setlocal ft=jade
 
 " Custom Plugin Settings
