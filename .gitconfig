@@ -1,0 +1,7 @@
+[color]
+	ui = true
+[user]
+	name = Johnson Chou
+	email = joujiahe@gmail.com
+[core]
+	editor = /usr/bin/vim
