@@ -106,3 +106,4 @@ set hlsearch           " Highlight search
 set incsearch          " Incremental search
 "set autowrite         " Automatically save before commands like :next and :make
 set hidden             " Hide buffers when they are abandoned
+set encoding=utf-8
