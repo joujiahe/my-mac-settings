@@ -42,7 +42,6 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'slim-template/vim-slim'
 Plugin 'elzr/vim-json'
 Plugin 'alpaca-tc/berkshelf.vim'
-autocmd BufRead,BufNewFile *.jade setlocal ft=jade
 
 " Custom Plugin Settings
 
@@ -69,6 +68,9 @@ let g:airline_powerline_fonts = 1
 
 " For Plugin 'Shougo/neocomplcache.vim'
 let g:neocomplcache_enable_at_startup = 1
+
+" For Plugin ctrlp
+let g:ctrlp_working_path_mode='rw'
 
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
