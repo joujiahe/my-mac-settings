@@ -99,8 +99,10 @@ autocmd! bufwritepost .vimrc source %
 filetype plugin indent on
 syntax on
 set nu
+set ruler
 colorscheme desert
 set colorcolumn=80
+highlight colorcolumn ctermbg=8
 set clipboard=unnamed  " Copy cross vim instance
 "set showcmd           " Show (partial) command in status line.
 set showmatch          " Show matching brackets.
