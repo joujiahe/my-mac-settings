@@ -26177,7 +26177,7 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/git/my-mac-settings</string>
+	<string>~/Downloads/mbadolato-iTerm2-Color-Schemes-1279259/backgrounds</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -26201,10 +26201,15 @@
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>382 208 786 222 0 0 1280 777 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>110 191 924 485 0 0 1280 777 </string>
+	<string>356 292 924 485 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 90 1274 687 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
@@ -26345,11 +26350,11 @@
 			<key>Ansi 8 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.16470588743686676</real>
+				<real>0.41508838534355164</real>
 				<key>Green Component</key>
-				<real>0.16078431904315948</real>
+				<real>0.40342703461647034</real>
 				<key>Red Component</key>
-				<real>0.14509804546833038</real>
+				<real>0.36524021625518799</real>
 			</dict>
 			<key>Ansi 9 Color</key>
 			<dict>
@@ -26386,7 +26391,7 @@
 			<key>Blur</key>
 			<true/>
 			<key>Blur Radius</key>
-			<real>1.6036381721496582</real>
+			<real>1.4052653312683105</real>
 			<key>Bold Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -26905,6 +26910,8 @@
 					<string>\btelnet:([a-z0-9A-Z_]+@)?([a-zA-Z0-9\-]+\.)*[a-zA-Z0-9\-]+\b</string>
 				</dict>
 			</array>
+			<key>Space</key>
+			<integer>-1</integer>
 			<key>Sync Title</key>
 			<false/>
 			<key>Tags</key>
@@ -26997,7 +27004,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-01-27T16:15:46Z</date>
+	<date>2015-01-28T18:57:30Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
