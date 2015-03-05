@@ -96,7 +96,6 @@ filetype plugin indent on    " required
 " General settings
 autocmd! bufwritepost .vimrc source %
 
-filetype plugin indent on
 syntax on
 set nu
 set ruler
