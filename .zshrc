@@ -80,9 +80,9 @@ export LANG=en_US.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Custom prompt
-local ret_status="%(?:%{$fg_bold[green]%}:%{$fg_bold[red]%}%s)"
+local ret_status="%(?:%{$fg[green]%}:%{$fg[red]%}%s)"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%})⚠️  "
-PROMPT='${ret_status} %{$fg_bold[green]%}%p %{$fg[cyan]%}%~ %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}'
+PROMPT='${ret_status} %{$fg[green]%}%p %{$fg[cyan]%}%~ %{$fg[blue]%}$(git_prompt_info)%{$fg[blue]%} % %{$reset_color%}'
 
 # User bin
 export PATH="$HOME/bin:$PATH"
