@@ -1,3 +1,4 @@
+let mapleader=";"
 " ==================================================
 "           Vundle Init
 " ==================================================
@@ -50,6 +51,8 @@ Plugin 'slim-template/vim-slim'
 Plugin 'elzr/vim-json'
 Plugin 'alpaca-tc/berkshelf.vim'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'majutsushi/tagbar'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -92,6 +95,18 @@ syntax enable
 set background=dark
 colorscheme solarized
 
+" Plugin 'nathanaelkane/vim-indent-guides'
+let g:indent_guides_enable_on_vim_startup=0
+let g:indent_guides_start_level=2
+let g:indent_guides_guide_size=1
+:nmap <silent> <Leader>i <Plug>IndentGuidesToggle
+
+" Plugin 'majutsushi/tagbar'
+let tagbar_right=1
+nnoremap <Leader>tr :TagbarToggle<CR> 
+let tagbar_width=32 
+let g:tagbar_compact=1
+
 " ==================================================
 "           Vim Configurations
 " ==================================================
@@ -102,9 +117,11 @@ noremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 autocmd! bufwritepost .vimrc source %
 
+syntax on
 set nu
 set ruler
 set colorcolumn=80
+set nowrap
 highlight colorcolumn ctermbg=0
 set clipboard=unnamed  " Copy cross vim instance
 "set showcmd           " Show (partial) command in status line.
@@ -116,3 +133,12 @@ set incsearch          " Incremental search
 "set autowrite         " Automatically save before commands like :next and :make
 set hidden             " Hide buffers when they are abandoned
 set encoding=utf-8
+set cursorline         " Highlight cure line
+set cursorcolumn
+set expandtab          " Indent settings
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set foldmethod=indent " Code Block Fold
+"set foldmethod=syntax
+set nofoldenable
