@@ -95,3 +95,4 @@ export GOPATH=$HOME/go
 
 # rbenv
 eval "$(rbenv init -)"
+ulimit -n 2048

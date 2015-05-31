@@ -1,8 +1,15 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+" ==================================================
+"           Vundle Init
+" ==================================================
+set nocompatible    " be iMproved, required
+filetype off        " Vundle bug, required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
+
+" ==================================================
+"           Vundle Plugins
+" ==================================================
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -10,8 +17,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
+" ==================================================
+"           Vundle Plugin Examples
+" ==================================================
 " plugin on GitHub repo
 "Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
@@ -26,7 +34,6 @@ Plugin 'gmarik/Vundle.vim'
 " Avoid a name conflict with L9
 "Plugin 'user/L9', {'name': 'newL9'}
 
-" Custom Plugins
 Plugin 'tpope/vim-rails'
 Plugin 'pangloss/vim-javascript'
 Plugin 'moll/vim-node'
@@ -42,48 +49,14 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'slim-template/vim-slim'
 Plugin 'elzr/vim-json'
 Plugin 'alpaca-tc/berkshelf.vim'
-
-" Custom Plugin Settings
-
-" For Plugin 'jnwhiteh/vim-golang'
-" Some Linux distributions set filetype in /etc/vimrc.
-" Clear filetype flags before changing runtimepath to force Vim to reload
-" them.
-if exists("g:did_load_filetypes")
-	filetype off
-	filetype plugin indent off
-endif
-set runtimepath+=$GOROOT/misc/vim " replace $GOROOT with the output of: go env GOROOT
-
-" For Plugin 'scrooloose/nerdtree'
-nnoremap <silent> <F5> :NERDTreeTabsToggle<CR>
-
-" For Plugin 'jistr/vim-nerdtree-tabs'
-"let g:nerdtree_tabs_open_on_console_startup=1
-
-" For Plugin 'bling/vim-airline'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline_powerline_fonts = 1
-
-" For Plugin 'Shougo/neocomplcache.vim'
-let g:neocomplcache_enable_at_startup = 1
-
-" For Plugin ctrlp
-let g:ctrlp_working_path_mode='rw'
-
-" Enable omni completion.
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-noremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+Plugin 'altercation/vim-colors-solarized'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
-"
+
 " Brief help
 " :PluginList       - lists configured plugins
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
@@ -93,13 +66,44 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" General settings
+" ==================================================
+"           Vundle Plugin Configurations
+" ==================================================
+" Plugin 'scrooloose/nerdtree'
+nnoremap <silent> <F5> :NERDTreeTabsToggle<CR>
+
+" Plugin 'jistr/vim-nerdtree-tabs'
+"let g:nerdtree_tabs_open_on_console_startup=1
+
+" Plugin 'bling/vim-airline'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline_powerline_fonts = 1
+"let g:airline_theme = 'powerlineish'
+
+" Plugin 'Shougo/neocomplcache.vim'
+let g:neocomplcache_enable_at_startup = 1
+
+" Plugin ctrlp
+let g:ctrlp_working_path_mode='rw'
+
+" Plugin 'altercation/vim-colors-solarized'
+syntax enable
+set background=dark
+colorscheme solarized
+
+" ==================================================
+"           Vim Configurations
+" ==================================================
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+noremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
 autocmd! bufwritepost .vimrc source %
 
-syntax on
 set nu
 set ruler
-colorscheme desert
 set colorcolumn=80
 highlight colorcolumn ctermbg=0
 set clipboard=unnamed  " Copy cross vim instance
