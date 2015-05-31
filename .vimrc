@@ -107,6 +107,9 @@ nnoremap <Leader>tr :TagbarToggle<CR>
 let tagbar_width=32 
 let g:tagbar_compact=1
 
+" Plugin 'kchmck/vim-coffee-script'
+autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+
 " ==================================================
 "           Vim Configurations
 " ==================================================
