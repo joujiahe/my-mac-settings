@@ -89,10 +89,13 @@ export PATH="$HOME/bin:$PATH"
 
 # Heroku
 export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/Users/joujiahe/Library/Android/sdk/platform-tools:$PATH"
 
 # Go
 export GOPATH=$HOME/go
 
 # rbenv
 eval "$(rbenv init -)"
-ulimit -n 2048
+
+ulimit -n 1024
+ulimit -u 1024
