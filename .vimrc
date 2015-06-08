@@ -73,7 +73,7 @@ filetype plugin indent on    " required
 "           Vundle Plugin Configurations
 " ==================================================
 " Plugin 'scrooloose/nerdtree'
-nnoremap <silent> <F5> :NERDTreeTabsToggle<CR>
+nnoremap <silent> <leader>5 :NERDTreeTabsToggle<CR>
 
 " Plugin 'jistr/vim-nerdtree-tabs'
 "let g:nerdtree_tabs_open_on_console_startup=1
