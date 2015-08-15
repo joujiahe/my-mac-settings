@@ -26177,9 +26177,9 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSFontPanelAttributes</key>
-	<string>1, 4</string>
+	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~</string>
+	<string>~/Downloads/mbadolato-iTerm2-Color-Schemes-1279259/backgrounds</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{996, 560}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -26213,11 +26213,11 @@
 	<key>NSWindow Frame NSColorPanel</key>
 	<string>747 346 231 329 0 0 1280 777 </string>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>243 156 802 94 0 0 1280 777 </string>
+	<string>266 370 802 77 0 0 1280 777 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>333 292 924 485 0 0 1280 777 </string>
+	<string>333 292 605 485 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 91 1274 686 0 0 1280 777 </string>
+	<string>0 69 1279 708 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -26387,7 +26387,7 @@
 			<key>Background Image Is Tiled</key>
 			<false/>
 			<key>Background Image Location</key>
-			<string></string>
+			<string>/Users/joujiahe/Downloads/mbadolato-iTerm2-Color-Schemes-1279259/backgrounds/solarized_darcula.jpg</string>
 			<key>Blend</key>
 			<real>0.30000001192092896</real>
 			<key>Blink Allowed</key>
@@ -26767,11 +26767,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>MesloLGLDZ-RegularForPowerline 20</string>
+			<string>SauceCodePowerline-Regular 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>MesloLGLDZ-RegularForPowerline 14</string>
+			<string>SourceHanCodeJP-Normal 14</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -26925,7 +26925,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.024879807606339455</real>
+			<real>0.11173030734062195</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -26948,6 +26948,10 @@
 			<string>/Users/joujiahe</string>
 		</dict>
 	</array>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>454751676.36277199</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>460013393.44335401</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -27010,7 +27014,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-05-31T07:18:09Z</date>
+	<date>2015-07-31T05:18:38Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -27051,7 +27055,11 @@
 	<integer>0</integer>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>findIgnoreCase_iTerm</key>
+	<true/>
+	<key>findRegex_iTerm</key>
+	<false/>
 	<key>iTerm Version</key>
-	<string>2.1</string>
+	<string>2.1.1</string>
 </dict>
 </plist>

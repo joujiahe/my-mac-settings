@@ -99,3 +99,4 @@ eval "$(rbenv init -)"
 
 ulimit -n 1024
 ulimit -u 1024
+PHP_AUTOCONF="/usr/local/bin/autoconf"

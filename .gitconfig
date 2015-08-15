@@ -5,3 +5,4 @@
 	email = joujiahe@gmail.com
 [core]
 	editor = /usr/bin/vim
+	ignorecase = false
