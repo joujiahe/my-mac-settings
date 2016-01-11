@@ -6,3 +6,5 @@
 [core]
 	editor = /usr/bin/vim
 	ignorecase = false
+[http]
+	sslVerify = false
