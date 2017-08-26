@@ -100,3 +100,4 @@ eval "$(rbenv init -)"
 ulimit -n 1024
 ulimit -u 1024
 PHP_AUTOCONF="/usr/local/bin/autoconf"
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
