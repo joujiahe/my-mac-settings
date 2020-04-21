@@ -3,61 +3,65 @@ let mapleader=";"
 "           Vundle Init
 " ==================================================
 set nocompatible    " be iMproved, required
+set backspace=2
 filetype off        " Vundle bug, required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 
 " ==================================================
-"           Vundle Plugins
+"           Plugins
 " ==================================================
-call vundle#begin()
+call plug#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+Plug 'gmarik/Vundle.vim'
 
 " ==================================================
 "           Vundle Plugin Examples
 " ==================================================
 " plugin on GitHub repo
-"Plugin 'tpope/vim-fugitive'
+"Plug 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
-"Plugin 'L9'
+"Plug 'L9'
 " Git plugin not hosted on GitHub
-"Plugin 'git://git.wincent.com/command-t.git'
+"Plug 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (i.e. when working on your own plugin)
-"Plugin 'file:///home/gmarik/path/to/plugin'
+"Plug 'file:///home/gmarik/path/to/plugin'
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
-"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+"Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Avoid a name conflict with L9
-"Plugin 'user/L9', {'name': 'newL9'}
+"Plug 'user/L9', {'name': 'newL9'}
 
-Plugin 'tpope/vim-rails'
-Plugin 'pangloss/vim-javascript'
-Plugin 'moll/vim-node'
-Plugin 'jnwhiteh/vim-golang'
-Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'bling/vim-airline'
-Plugin 'tpope/vim-fugitive'
-Plugin 'Shougo/neocomplcache.vim'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'slim-template/vim-slim'
-Plugin 'elzr/vim-json'
-Plugin 'alpaca-tc/berkshelf.vim'
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'majutsushi/tagbar'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'wavded/vim-stylus'
+Plug 'tpope/vim-rails'
+Plug 'pangloss/vim-javascript'
+Plug 'moll/vim-node'
+Plug 'jnwhiteh/vim-golang'
+Plug 'kien/ctrlp.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'jistr/vim-nerdtree-tabs'
+"Plug 'bling/vim-airline'
+Plug 'tpope/vim-fugitive'
+Plug 'Shougo/neocomplcache.vim'
+Plug 'kchmck/vim-coffee-script'
+Plug 'digitaltoad/vim-jade'
+Plug 'slim-template/vim-slim'
+Plug 'elzr/vim-json'
+Plug 'alpaca-tc/berkshelf.vim'
+Plug 'altercation/vim-colors-solarized'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'majutsushi/tagbar'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'wavded/vim-stylus'
+Plug 'junegunn/fzf.vim'
+Plug 'itchyny/lightline.vim'
+Plug 'w0rp/ale'
 
 " All of your Plugins must be added before the following line
-call vundle#end()            " required
+call plug#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -74,43 +78,46 @@ filetype plugin indent on    " required
 " ==================================================
 "           Vundle Plugin Configurations
 " ==================================================
-" Plugin 'scrooloose/nerdtree'
+" Plug 'scrooloose/nerdtree'
 nnoremap <silent> <leader>5 :NERDTreeTabsToggle<CR>
 
-" Plugin 'jistr/vim-nerdtree-tabs'
+" Plug 'jistr/vim-nerdtree-tabs'
 "let g:nerdtree_tabs_open_on_console_startup=1
 
-" Plugin 'bling/vim-airline'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline_powerline_fonts = 1
+" Plug 'bling/vim-airline'
+"let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#buffer_nr_show = 1
+"let g:airline_powerline_fonts = 1
 "let g:airline_theme = 'powerlineish'
 
-" Plugin 'Shougo/neocomplcache.vim'
+" Plug 'Shougo/neocomplcache.vim'
 let g:neocomplcache_enable_at_startup = 1
 
 " Plugin ctrlp
 let g:ctrlp_working_path_mode='rw'
 
-" Plugin 'altercation/vim-colors-solarized'
+" Plug 'altercation/vim-colors-solarized'
 syntax enable
-set background=dark
-colorscheme solarized
+"set background=dark
+"colorscheme solarized
 
-" Plugin 'nathanaelkane/vim-indent-guides'
+" Plug 'nathanaelkane/vim-indent-guides'
 let g:indent_guides_enable_on_vim_startup=0
 let g:indent_guides_start_level=2
 let g:indent_guides_guide_size=1
 :nmap <silent> <Leader>i <Plug>IndentGuidesToggle
 
-" Plugin 'majutsushi/tagbar'
+" Plug 'majutsushi/tagbar'
 let tagbar_right=1
 nnoremap <Leader>tr :TagbarToggle<CR> 
 let tagbar_width=32 
 let g:tagbar_compact=1
 
-" Plugin 'kchmck/vim-coffee-script'
+" Plug 'kchmck/vim-coffee-script'
 autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=2 expandtab
+
+" Plug 'junegunn/fzf.vim'
+:nmap <c-p> :Files<CR>
 
 " ==================================================
 "           Vim Configurations
@@ -139,7 +146,7 @@ set incsearch          " Incremental search
 set hidden             " Hide buffers when they are abandoned
 set encoding=utf-8
 set cursorline         " Highlight cure line
-set cursorcolumn
+"set cursorcolumn
 set expandtab          " Indent settings
 set tabstop=2
 set shiftwidth=2
@@ -147,3 +154,4 @@ set softtabstop=2
 set foldmethod=indent " Code Block Fold
 "set foldmethod=syntax
 set nofoldenable
+set laststatus=2

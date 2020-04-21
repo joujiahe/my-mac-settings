@@ -81,23 +81,39 @@ export LANG=en_US.UTF-8
 
 # Custom prompt
 local ret_status="%(?:%{$fg[green]%}:%{$fg[red]%}%s)"
-ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%})⚠️  "
-PROMPT='${ret_status} %{$fg[green]%}%p %{$fg[cyan]%}%~ %{$fg[blue]%}$(git_prompt_info)%{$fg[blue]%} % %{$reset_color%}'
+#ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%})⚠️  "
+#PROMPT='${ret_status} %{$fg[green]%}%p %{$fg[cyan]%}%~ %{$fg[blue]%}$(git_prompt_info)%{$fg[blue]%} % %{$reset_color%}'
+ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[green]%}＊"
+PROMPT='%{$fg[green]%}%p %{$fg[cyan]%}%~ %{$fg[blue]%}$(git_prompt_info)%{$fg[blue]%} % %{$reset_color%}'
 
 # User bin
 export PATH="$HOME/bin:$PATH"
 
 # Heroku
 export PATH="/usr/local/heroku/bin:$PATH"
-export PATH="/Users/joujiahe/Library/Android/sdk/platform-tools:$PATH"
+
+# Android
+export ANDROID_SDK_ROOT=/Users/$USER/Library/Android/sdk
+export PATH=${PATH}:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools
 
 # Go
-export GOPATH=$HOME/go
+export PATH="/usr/local/go/bin:$PATH"
 
 # rbenv
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 
 ulimit -n 1024
 ulimit -u 1024
 PHP_AUTOCONF="/usr/local/bin/autoconf"
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+
+export PATH="$HOME/google-cloud-sdk/bin:$PATH"
+alias vim='/usr/local/bin/vim';
+alias vi='/usr/local/bin/vim';
+
+export NVM_DIR="/Users/joujiahe/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# flutter
+export PATH="$HOME/flutter/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
